@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+       
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My-spotify-Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="images/icons8-spotify-48.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">S
+    <script src="script.js" defer></script>
+  </head>
+  <body
+    style="
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(#131614, #000000);
+      background-repeat: no-repeat;
+    "
+  >
+
+
+<div id="loginForm" class="modal">
+  <div class="modal-content">
+      <span class="close" id="closeLogin">&times;</span>
+      <h2>Login</h2>
+      <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          
+          <button type="submit">Login</button>
+      </form>
+  </div>
+</div>
+
+<div id="signUpForm" class="modal">
+  <div class="modal-content">
+      <span class="close" id="closeSignUp">&times;</span>
+      <h2>Sign Up</h2>
+      <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="mobile">Mobile Number:</label>
+          <input type="text" id="mobile" name="mobile" required>
+          
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required>
+          
+          <button type="submit">Sign Up</button>
+      </form>
+  </div>
+</div>
+
+    <a class="navbar-brand"  href="#"
+            ><img src="C:\Users\user\Downloads\e1886jde.png" alt="logo"  style="margin-left:600px ;padding:10px; align-content: center;"
+          />
+          
+            <h1 class="heading" >RELAXCIFY</h1>
+          </div>
+          <h2 class="text">THE ONE STOP SOLUTION TO GET YOU RELAXED.....</h2>
+    <div class="container-md">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          
+          
+        
+          <div class="collapse navbar-collapse" id="navbarNav" >
+            <ul class="navbar-nav" >
+              
+              
+             <li class="nav-item">
+                <a class="nav-link active" style="color: #32CD32 ;margin-right: 10px;" aria-current="page" href="#">HOME</a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="color: #32CD32; padding-top: 38px;margin-right: 10px;" aria-current="page" href="about.html">ABOUT US </a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: #32CD32;  padding-top: 38PX;margin-right: 10px;" href="features.html">FEATURES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:#32CD32; padding-top: 38px;margin-right: 10px ;" href="feedback.html">FEEDBACK</a>
+              </li>
+              <li class="nav-item" style="padding-top:36px ;">
+                <button class="btn nav-link" style="  background-color: #32CD32 ; color:#131614; margin-right: 10px;" >Dark</button>
+              </li>
+              <li class="nav-item" style="padding-top: 36px;">
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                      <form class="d-flex" role="search";>
+                        <input class="form-control me-2" type="search" placeholder="TYPE..." aria-label="Search" style="margin-right: 80px;">
+                        <button class="btn btn-outline-success" type="submit" style="background-color: #32CD32; color:#131614;">Search</button>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="nav-item" padding-top="36px" margin-right="10px">
+                    <nav>
+  
+                      <ul class="nav-links">
+                          
+                          
+                        
+                          
+                          <li><button id="loginBtn">Login</button></li>
+                          <li><button id="signUpBtn">Sign Up</button></li>
+                      </ul>
+                    </nav>
+                  </li>
+                  </nav>
+                  
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div style="border:dotted; color:aqua; width:1200px; margin-left: 100px;margin-right: 170px">
+        <h1 class="text" style="color: palevioletred; text-align: center;"> LET'S DIVE INTO THE WORLD OF MUSIC</h1>
+      <div class="main">
+        <div class="audio audio1 dark  " id ="audiocontainer" style="border: palevioletred double;">
+            <img  id ="play-audio" src="https://tse1.mm.bing.net/th?id=OIP.ArNr41uTJtaxS4wXEe2s4AHaHa&pid=Api&P=0&h=220" alt="click to play audio " style=" cursor :pointer ; ">
+            <audio id="audio" src="C:\Users\user\Downloads\audio.1.mp3"></audio>
+            <h2>Road Trip love hits </h2>
+            
+            <p>Your daily update of the most played tracks right now - India.</p>
+    
+            
+        </div>
+        <div class="audio audio1 dark">
+            <img  id="play-audio1" src="https://www.naasongs.co/wp-content/uploads/2022/05/Beast-Telugu-2022.jpg" alt="click to play music" style=" cursor:pointer"    >
+                    <audio id="audio1" src="C:\Users\user\Downloads\audio2.mp3"></audio>
+            <h2>TELUGU MIX  </h2>
+            <p>The finest set of Telugu music from the past 5 years. Cover : Pushpa</p>
+        </div>
+        <div class="audio audio1 dark">
+            <img  id="play-audio2"src="https://tse1.mm.bing.net/th?id=OIP.JF_O9-gcrAvTZ-oFuIqoHAAAAA&pid=Api&P=0&h=220" alt="click to play music" style="cursor:pointer">
+            <audio id="audio2" src="C:\Users\user\Downloads\audio3.mp3"></audio>
+            <h2>Today Top Hits</h2>
+            <p>Chaand Baaliyan' and other popular Indie hits! Cover - Akanksha Sethi</p>
+        </div>
+        <div class="audio audio1 dark">
+            <img id="play-audio3"src="https://i.scdn.co/image/ab67706c0000bebbeaf0a0bf5d524c4f14132104" alt="click to play music" style="cursor:pointer">
+            <audio id="audio3" src="C:\Users\user\Downloads\audio4.mp3"></audio>
+            <h2>Pop Favourites</h2>
+            <p>Keep calm and focus with ambient and post-rock music.</p>
+        </div>
+        <div class="audio  dark">
+            <img id="play-audio4" src="https://static.qobuz.com/images/covers/za/3x/u60tlylrp3xza_600.jpg" alt="click to play music" style="cursor:pointer">
+            <audio id="audio4" src="C:\Users\user\Downloads\audio5.mp3"></audio>
+            <h2>DARSHAL RAVAL</h2>
+            <p>Your daily update of the most played tracks right now - India.</p>
+        </div>
+        <div class="audio audio1 dark">
+            <img id="play-audio5"src="https://i1.wp.com/www.creatopy.com/blog/wp-content/uploads/2019/10/dreamer-1024x1024.jpg" alt="click to play music" style="cursor:pointer";>
+            <audio id="audio5" src="C:\Users\user\Downloads\audio6.mp3"></audio>
+            <h2>Top 50 - India</h2>
+            <p>Your daily update of the most played tracks right now - India.</p>
+        </div>
+        <div class="audio  dark">
+            <img id="play-audio6" src="https://media2.bollywoodhungama.in/wp-content/uploads/2017/06/Kedarnath-1.jpg" alt="click to play audio" style="cursor:pointer";>
+            <audio id="audio6" src="C:\Users\user\Downloads\audio7.mp3"></audio>
+            <h2>MOVIE SPECIAL</h2>
+            <p>Your daily update of the most played tracks right now - India.</p>
+        </div>
+        <div class="audio audio1 dark">
+            <img id="play-audio7" src="https://tse1.mm.bing.net/th?id=OIP.VmhNEG4oN7J-9ov4NC8vBAHaE8&pid=Api&P=0&h=220" alt="click to play music" style="cursor:pointer";>
+            <audio id="audio7" src="C:\Users\user\Downloads\audio8.mp3"></audio>
+            <h2>Party TIME!!!</h2>
+            <p>Your daily update of the most played tracks right now - India.</p>
+        </div>
+        <div class="audio audio1 dark">
+            <img id="play-audio8" src="https://i.scdn.co/image/ab67706f00000003721742bfde0b12a2b74d2658" alt="click to play music" style="cursor:pointer";>
+            <audio id="audio8" src="C:\Users\user\Downloads\audio9.mp3"></audio>
+            <h2>PUNJABI MIX </h2>
+            <p>Your daily update of the most played tracks right now - India.</p>
+        </div>
+        <div class="audio  dark">
+            <img id="play-audio9" src="https://i.ytimg.com/vi/UaYQRG-CuXI/maxresdefault.jpg" alt="click to play music" style="cursor:pointer";>
+            <audio id="audio9" src="C:\Users\user\Downloads\audio10.mp3"></audio>
+            <h2>STUDY MOTIVATION </h2>
+            <p>Your daily update of the most played tracks right now - India.</p>
+        </div>
+        <div class="audio audio1 dark">
+            <img id="play-audio10" src="https://i2.cinestaan.com/image-bank/1500-1500/63001-64000/63892.jpg" alt=" click to play music" style="cursor:pointer";>
+            <audio id="audio10" src="C:\Users\user\Downloads\audio11.mp3"></audio>
+
+            <h2>ARIJIT SINGH SPECIAL </h2>
+            <p>Your daily update of the most played tracks right now - India.</p>
+        </div>
+        <div class="audio    dark">
+            <img id="play-audio11" src="https://tse3.mm.bing.net/th?id=OIP.vFf_xUEyGzlSLGLS65mbLgHaEK&pid=Api&P=0&h=220" alt="click to play music" style="cursor:pointer";>
+            <audio id="audio11" src="C:\Users\user\Downloads\audio12.mp3"></audio>
+            <h2>KRISHNA!!</h2>
+            <p>Your daily update of the most played tracks right now - India.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+      <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="social-icons">
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+  </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
